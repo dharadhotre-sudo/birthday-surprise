@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday My Love ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MUSIC -->
+    <audio id="loveSong">
+        <source src="music/apna-bana-le.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- FLOATING HEARTS -->
+    <div class="floating-hearts">
+        <span>❤️</span>
+        <span>💕</span>
+        <span>💗</span>
+        <span>💖</span>
+        <span>✨</span>
+        <span>❤️</span>
+        <span>💕</span>
+    </div>
+
+
+    <!-- CONFETTI -->
+    <div id="confetti-container"></div>
+
+
+    <!-- ================= WELCOME ================= -->
+
+    <section id="welcome" class="screen active">
+
+        <div class="hero-card">
+
+            <div class="small-label">
+                A little surprise for you ✨
+            </div>
+
+            <div class="big-heart">
+                ❤️
+            </div>
+
+            <h1>
+                Happy Birthday<br>
+                My Love
+            </h1>
+
+            <p class="hero-text">
+                I made something special for you...
+                <br>
+                So let's go through our little story together. 🥺💕
+            </p>
+
+            <button class="main-button" onclick="startStory()">
+                Start Our Story 💕
+            </button>
+
+            <p class="tap-note">
+                🎧 Headphones recommended
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PHOTOS ================= -->
+
+    <section id="photos" class="screen">
+
+        <div class="content-card photo-section">
+
+            <p class="section-small">
+                CHAPTER 01
+            </p>
+
+            <h2>
+                Our Little Moments 📸
+            </h2>
+
+            <p class="section-description">
+                Four moments, countless memories. ❤️
+            </p>
+
+
+            <!-- PHOTO GRID -->
+
+            <div class="photo-grid">
+
+
+                <!-- PHOTO 1 -->
+
+                <div class="photo-card">
+
+                    <div class="photo-number">
+                        01
+                    </div>
+
+                    <div class="photo-wrapper">
+
+                        <img
+                            src="images/photo1.jpg"
+                            alt="Our first memory"
+                        >
+
+                    </div>
+
+                    <div class="photo-caption">
+                        <span>♡</span>
+                        One of my favourite moments
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 2 -->
+
+                <div class="photo-card">
+
+                    <div class="photo-number">
+                        02
+                    </div>
+
+                    <div class="photo-wrapper">
+
+                        <img
+                            src="images/photo2.jpg"
+                            alt="Our second memory"
+                        >
+
+                    </div>
+
+                    <div class="photo-caption">
+                        <span>♡</span>
+                        A moment worth remembering
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 3 -->
+
+                <div class="photo-card">
+
+                    <div class="photo-number">
+                        03
+                    </div>
+
+                    <div class="photo-wrapper">
+
+                        <img
+                            src="images/photo3.jpg"
+                            alt="Our third memory"
+                        >
+
+                    </div>
+
+                    <div class="photo-caption">
+                        <span>♡</span>
+                        Just us ❤️
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 4 -->
+
+                <div class="photo-card">
+
+                    <div class="photo-number">
+                        04
+                    </div>
+
+                    <div class="photo-wrapper">
+
+                        <img
+                            src="images/photo4.jpg"
+                            alt="Our fourth memory"
+                        >
+
+                    </div>
+
+                    <div class="photo-caption">
+                        <span>♡</span>
+                        And many more to come...
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LITTLE CENTER MESSAGE -->
+
+            <div class="photo-message">
+
+                <span>✨</span>
+
+                <p>
+                    Every picture has a story.
+                    <br>
+                    And I love that ours is still being written. ❤️
+                </p>
+
+                <span>✨</span>
+
+            </div>
+
+
+            <button
+                class="main-button"
+                onclick="showScreen('memories')"
+            >
+                Continue Our Story →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MEMORIES ================= -->
+
+    <section id="memories" class="screen">
+
+        <div class="content-card">
+
+            <p class="section-small">
+                CHAPTER 02
+            </p>
+
+            <h2>
+                Little Things I Remember 🥺
+            </h2>
+
+            <div class="memory-list">
+
+                <div class="memory-item">
+                    <span>01</span>
+                    <p>
+                        The conversations that somehow never seem long enough.
+                    </p>
+                </div>
+
+                <div class="memory-item">
+                    <span>02</span>
+                    <p>
+                        The random laughs that turn normal days into good days.
+                    </p>
+                </div>
+
+                <div class="memory-item">
+                    <span>03</span>
+                    <p>
+                        The silly moments that only make sense to us.
+                    </p>
+                </div>
+
+                <div class="memory-item">
+                    <span>04</span>
+                    <p>
+                        Every little memory that quietly became important to me.
+                    </p>
+                </div>
+
+            </div>
+
+            <button
+                class="main-button"
+                onclick="showScreen('reasons')"
+            >
+                There's More... 💗
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REASONS ================= -->
+
+    <section id="reasons" class="screen">
+
+        <div class="content-card">
+
+            <p class="section-small">
+                CHAPTER 03
+            </p>
+
+            <h2>
+                Why I Love You ❤️
+            </h2>
+
+            <p class="section-description">
+                Pick a heart... each one hides a little reason.
+            </p>
+
+            <div class="heart-grid">
+
+                <button onclick="showReason(1)">❤️</button>
+                <button onclick="showReason(2)">💗</button>
+                <button onclick="showReason(3)">💖</button>
+                <button onclick="showReason(4)">💕</button>
+                <button onclick="showReason(5)">💘</button>
+
+            </div>
+
+            <div id="reasonBox" class="reason-box">
+
+                <p>
+                    Click a heart to discover a little reason... 🥺
+                </p>
+
+            </div>
+
+            <button
+                class="main-button"
+                onclick="showScreen('cake')"
+            >
+                One Last Thing... 🎂
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CAKE ================= -->
+
+    <section id="cake" class="screen">
+
+        <div class="content-card cake-card">
+
+            <p class="section-small">
+                CHAPTER 04
+            </p>
+
+            <h2>
+                Make A Wish 🎂
+            </h2>
+
+            <p class="section-description">
+                Okay birthday boy...
+                <br>
+                this one is for you. ❤️
+            </p>
+
+            <div class="cake">
+
+                <div class="candle">
+
+                    <div id="flame" class="flame"></div>
+
+                    <div class="candle-stick"></div>
+
+                </div>
+
+                <div class="cake-top"></div>
+
+                <div class="cake-body"></div>
+
+                <div class="cake-bottom"></div>
+
+            </div>
+
+            <button
+                id="blowButton"
+                class="main-button"
+                onclick="blowCandle()"
+            >
+                Blow The Candle 💨
+            </button>
+
+            <div
+                id="birthdayMessage"
+                class="birthday-message"
+            >
+
+                <h3>
+                    Happy Birthday My Love! 🎉❤️
+                </h3>
+
+                <p>
+                    May this year bring you everything
+                    you've been wishing for.
+                </p>
+
+            </div>
+
+            <button
+                class="secondary-button"
+                onclick="showScreen('music')"
+            >
+                Continue 🎵
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MUSIC ================= -->
+
+    <section id="music" class="screen">
+
+        <div class="content-card music-card">
+
+            <p class="section-small">
+                CHAPTER 05
+            </p>
+
+            <div class="music-animation">
+                🎵
+            </div>
+
+            <h2>
+                Our Song 💕
+            </h2>
+
+            <div class="song-name">
+                Apna Bana Le
+            </div>
+
+            <p class="artist">
+                Arijit Singh
+            </p>
+
+            <p class="section-description">
+                Some songs sound different
+                when they remind you of someone. ❤️
+            </p>
+
+            <button
+                id="musicButton"
+                class="main-button"
+                onclick="playSong()"
+            >
+                🎵 Play Our Song
+            </button>
+
+            <button
+                class="secondary-button"
+                onclick="showScreen('letter')"
+            >
+                Read My Letter 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LETTER ================= -->
+
+    <section id="letter" class="screen">
+
+        <div class="content-card letter-card">
+
+            <p class="section-small">
+                CHAPTER 06
+            </p>
+
+            <div class="letter-icon">
+                💌
+            </div>
+
+            <h2>
+                A Little Letter For You
+            </h2>
+
+            <div class="letter">
+
+                <p>
+                    My Love,
+                </p>
+
+                <p>
+                    Happy Birthday to the person who makes
+                    my days a little brighter and my heart
+                    a little happier. ❤️
+                </p>
+
+                <p>
+                    I don't always know how to put everything
+                    I feel into words, but I hope you know
+                    how special you are to me.
+                </p>
+
+                <p>
+                    Thank you for all the laughs, conversations,
+                    memories and little moments that make
+                    our story ours.
+                </p>
+
+                <p>
+                    I hope this new year of your life brings
+                    you happiness, success, peace and all the
+                    beautiful things you deserve.
+                </p>
+
+                <p>
+                    And hopefully...
+                    many more memories with me. 🥺❤️
+                </p>
+
+                <p class="signature">
+                    Yours Dharruuu<br>
+                    ❤️
+                </p>
+
+            </div>
+
+            <button
+                class="main-button"
+                onclick="showScreen('final')"
+            >
+                One More Surprise ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FINAL ================= -->
+
+    <section id="final" class="screen">
+
+        <div class="final-card">
+
+            <div class="final-heart">
+                ❤️
+            </div>
+
+            <p class="section-small">
+                THE END...
+            </p>
+
+            <h1>
+                You + Me
+            </h1>
+
+            <div class="infinity">
+                ♾️
+            </div>
+
+            <h2>
+                Always.
+            </h2>
+
+            <p>
+                Happy Birthday once again, my love. ❤️
+            </p>
+
+            <p class="final-small">
+                Here's to this birthday...
+                and all the ones we'll celebrate together. 🥺💕
+            </p>
+
+            <button
+                class="main-button"
+                onclick="restart()"
+            >
+                ↻ Replay Our Story
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
